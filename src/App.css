@@ -1,6 +1,57 @@
-.App {
+.AppEstilo {
   text-align: center;
 }
+.Encab {
+  text-align: center;
+}
+body{
+  background-color: #00DBDE;
+  background-image: linear-gradient(90deg, #FC00FF  0%, #00DBDE 100%);
+}
+.encabezado{
+  border-bottom: rgb(167, 144, 11) 2px solid ;
+}
+.boton-fm{
+  border-color: #dee2eb;
+}
+.pie-pie{
+  border-top: rgb(167, 144, 11) 2px solid ;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Ajusta el margen izquierdo según tus necesidades */
+}
+
+.logo {
+  margin-right: 10px; /* Ajusta el margen derecho según tus necesidades */
+ /* background-color: black;
+  border-radius: 15rem;*/
+}
+
+/************/
+.memes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.memes-container img {
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-container button {
+  margin: 0 0.5rem;
+}
+
+/****************/
 
 .App-logo {
   height: 40vmin;

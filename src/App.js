@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MemeEditor from './componentes/MemeEditor'
+import AppMeme from './componentes/AppMeme';
+//import { Switch } from 'react-router-dom';
+
+//import logo from './logo-faby2.png';
+
+//import Encab from './componentes/Encab';
+//import Pie from './componentes/Pie';
+
+ 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>  
+      <Routes >
+        
+          <Route path="/" element={<AppMeme />} />
+          <Route path="/MemeEditor" element={<MemeEditor />} />
+        {/** <div >      <Encab/>
+         <GifEditor/>  */} 
+        {/** <MemeEditor/> 
+              <AppMeme/>
+              <Pie/></div>*/}
+        
+      </Routes>
+    </Router> 
+
   );
 }
 
